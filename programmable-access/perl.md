@@ -61,6 +61,7 @@ use Data::Dumper;
 
 ## Phenotypes
 ### Get all phenotypes and statistics
+
 `input`: none,
 
 `output`: an `array`
@@ -120,6 +121,7 @@ print Dumper(@$phenotype_assoc_species[0..4]);
 ```
 
 ### Get associated genera of a phenotype
+
 `input`: a MeSH ID,
 
 `output`: a `scalar`
@@ -148,7 +150,6 @@ my @genera_prevalence = map {
         $_->{samples} / $phenotype_stats->{stats}->{nr_valid_samples} * 100
 }@$phenotype_assoc_species;
 ```
-
 
 ### Get associated projects
 
